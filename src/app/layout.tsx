@@ -8,6 +8,10 @@ import '@/app/globals.css';
 
 import Footer from './footer';
 import Header from './header';
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
     title: 'Next.js 16 Starter',
@@ -18,7 +22,7 @@ const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
     return (
         // ? https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
         // ? https://react.dev/reference/react-dom/client/hydrateRoot#suppressing-unavoidable-hydration-mismatch-errors
-        <html suppressHydrationWarning lang='en'>
+        <html suppressHydrationWarning lang='en' className={cn("font-sans", geist.variable)}>
             <body className={`bg-background text-foreground flex min-h-dvh flex-col antialiased`}>
                 <ThemeProvider attribute='class'>
                     <Header />

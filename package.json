@@ -36,7 +36,7 @@
         "@types/react-dom": "19.2.3",
         "baseline-browser-mapping": "2.10.37",
         "eslint": "10.5.0",
-        "eslint-config-next": "16.2.9",
+        "eslint-config-next": "16.2.10",
         "eslint-config-prettier": "10.1.8",
         "eslint-plugin-tailwindcss": "3.18.3",
         "json-server": "1.0.0-beta.15",

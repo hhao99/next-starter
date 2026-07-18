@@ -1,0 +1,77 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "1st task",
+      "completed": "false"
+    },
+    {
+      "id": "2",
+      "title": "2nd task",
+      "completed": "true"
+    },
+    {
+      "id": "3",
+      "title": "3rd task",
+      "completed": "false"
+    },
+    {
+      "title": "test2",
+      "id": "qMhE0xsJMhs"
+    },
+    {
+      "title": "test3",
+      "id": "VawxLrWIkNo"
+    },
+    {
+      "title": "test3",
+      "id": "B0gHtRkfEsw"
+    },
+    {
+      "title": "test4",
+      "id": "S_40Z8lToAg"
+    },
+    {
+      "title": "test1",
+      "id": "mHHot0mlbto"
+    },
+    {
+      "title": "test2",
+      "id": "svE2RTcypoo"
+    },
+    {
+      "title": "test10",
+      "id": "9rstIpJP17M"
+    },
+    {
+      "title": "test1",
+      "id": "I603X8xcDnY"
+    },
+    {
+      "id": "gL2TYKR1Bho",
+      "title": "test1",
+      "completed": false
+    },
+    {
+      "id": "fpPzqahxdZQ",
+      "title": "test2",
+      "completed": false
+    },
+    {
+      "id": "IZ5fBbBYEGA",
+      "title": "test3",
+      "completed": false
+    },
+    {
+      "id": "TYcIpq3aXnM",
+      "title": "test65",
+      "completed": false
+    },
+    {
+      "id": "093_AU786xM",
+      "title": "test7",
+      "completed": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

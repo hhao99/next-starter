@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // shadcn
 import { Input } from '@/components/ui/input';
@@ -10,6 +10,7 @@ import { useTodoStore } from './store';
 
 export default function Home() {
     const store = useTodoStore();
+    const todos = useTodoStore((state) => state.list);
     const [title, setTitle] = useState('');
 
     const handleSubmit = (e) => {
@@ -17,6 +18,13 @@ export default function Home() {
         store.addTodo({ title });
         setTitle('');
     };
+
+    useEffect(() => {
+        const fetchData = async () => {
+            await store.fetchTodos();
+        };
+        fetchData();
+    }, []);
     return (
         <>
             <h3>Todo App</h3>
@@ -28,7 +36,7 @@ export default function Home() {
             {store.validationError && <p className='text-lg text-red-600'>{store.validationError}</p>}
             <Separator />
             <ul>
-                {store.list.map((todo) => (
+                {todos.map((todo) => (
                     <li key={todo.id}>{todo.title}</li>
                 ))}
             </ul>
